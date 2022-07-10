@@ -61,6 +61,14 @@
     
 ## 6. github 웹사이트 새로고침
 
+---
+# 깃허브 협업 방법
 
+
+---
+### VS Code 소스코드 자동정렬 익스텐션
+#### 1. VS Code Extentions > Prettier 다운받아 설치
+#### 2. VS Code 소스코드창에서 마우스 오른버튼 눌러 Format Document 클릭
+---
 출처: 코딩알려주는누나 https://www.youtube.com/watch?v=lelVripbt2M
 깃, 깃허브 한번에 이해시켜드리고 포트폴리오 올리는 법까지 알려드림. 15분안에 당신은 Github 전문가가 됩니다
