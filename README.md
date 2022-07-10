@@ -72,7 +72,16 @@
     C:> git clone 붙여넣기 freshman  <-- 신입 폴더이름
     C:> cd freshman
     C:> code .
-
+### 5. VS Code에서 소스코드 수정
+### 6. 터미널 열어서
+    $ git add .
+    $ git commit -m "freshman first commit"
+    $ git checkout -b 'freshman'   <-- 신입 계정을 위한 새로운 공간 생성
+    $ git push origin freshman     <-- 신입 계정을 위한 공간에 업로드
+    
+### 7. github 페이지 새로고침
+    freshman had recent pushes less than a minute ago    <-- 메시지 확인
+    Compare & pull request         <-- 버튼 클릭
 
 ---
 ### VS Code 소스코드 자동정렬 익스텐션
