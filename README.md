@@ -68,7 +68,10 @@
 ### 2. VS Code에서 파일 생성, 업로드
 ## <신입 계정>
 ### 3. github > Code > ssh download url 복사
-### 4. 터미널(cmd창)에서 git clone 붙여넣기
+### 4. 터미널(cmd창)에서
+    C:> git clone 붙여넣기 freshman  <-- 신입 폴더이름
+    C:> cd freshman
+    C:> code .
 
 
 ---
