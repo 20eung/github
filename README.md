@@ -63,7 +63,9 @@
 
 ---
 # 깃허브 협업 방법
-
+## 1. 신규 프로젝트 생성 - github repository
+## 2. VS Code에서 파일 생성, 업로드           <-- 마스터 계정
+## 3. github > Code > ssh download url 복사   <-- 신입 계정
 
 ---
 ### VS Code 소스코드 자동정렬 익스텐션
