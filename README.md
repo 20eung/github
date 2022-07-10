@@ -53,5 +53,14 @@
     
 ## 4. github 웹사이트 새로고침
 
+## 5. 로컬 파일을 수정하고나서 할 일
+
+    $ git add .
+    $ git commit -m "second commit"   <-- 히스토리를 만든다. -m은 메시지(message) 의미
+    # git push origin master          <-- github repository에 업로드
+    
+## 6. github 웹사이트 새로고침
+
+
 출처: 코딩알려주는누나 https://www.youtube.com/watch?v=lelVripbt2M
 깃, 깃허브 한번에 이해시켜드리고 포트폴리오 올리는 법까지 알려드림. 15분안에 당신은 Github 전문가가 됩니다
