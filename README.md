@@ -36,6 +36,30 @@
     git config --global user.email "20eung@gmail.com" <-- 깃허브 가입시 쓴 이메일
     git config --list                                 <-- 설정이 잘 들어갔나 확인
 
+## 3. token 인증 방법
+
+#### 1. github 접속, 로그인
+https://github.com
+
+#### 2. 우측 상단 사용자 계정 아이콘 눌러 Settings 클릭
+
+#### 3. 좌측 하단 Developer settings 클릭
+
+#### 4. 좌측 메뉴 Personal access tokens 클릭
+
+#### 5. 우측 메뉴 Generate new toke 클릭
+
+#### 6. Note, Expiration 설정 후 Select scopes에서 repo 체크
+
+#### 7. 맨 아래 Generate token 클릭
+
+#### 8. 복사 (반드시!)
+
+#### 9. 로컬 컴퓨터 git 설정에 등록
+
+    git config --global user.password '복사한 토큰 붙여넣기'
+    
+
 ---
 # VS Code를 이용하여 컴퓨터 로컬 파일을 github에 올리기
 ## 1. VS Code 실행
