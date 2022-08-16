@@ -8,7 +8,7 @@
 # github 사용법
 ## 1. Repository 생성 : Public or Private
 ### ...or create a new repository on the command line
-
+```
     echo "# github" >> README.md
     git init
     git add README.md
@@ -16,14 +16,15 @@
     git branch -M main
     git remote add origin git@github.com:20eung/github.git
     git push -u origin main
-
+```
 
 ### ...or push an existing repository from the command line
-
+```
     git remote add origin git@github.com:20eung/github.git
     git branch -M main
     git push -u origin main
-    
+```   
+
 ---
 # github 설치 및 설정
 ## 1. git download, 설치
@@ -31,11 +32,11 @@
     https://git-scm.com/downloads
 
 ## 2. git bash 실행 (환경설정)
-
+```
     git config --global user.name "20eung"            <-- 사용자 영문 이름
     git config --global user.email "20eung@gmail.com" <-- 깃허브 가입시 쓴 이메일
     git config --list                                 <-- 설정이 잘 들어갔나 확인
-
+```
 ## 3. token 인증 방법
 
 #### 1. github 접속, 로그인
@@ -56,9 +57,19 @@ https://github.com
 #### 8. 복사 (반드시!)
 
 #### 9. 로컬 컴퓨터 git 설정에 등록
-
+```
     git config --global user.password '복사한 토큰 붙여넣기'
-    
+```
+
+#### 10. 만약 git@github.com: Permission denied (publickey). 에러가 발생한다면
+* GitHub 우측 상단 사용자 계정 아이콘 눌러 Settings 클릭
+* SSH and GPG key 눌러 SSH keys 의 [ New SSH key] 클릭
+* 로컬 컴퓨터의 .ssh/id_rsa.pub 파일 내용을 복사하여 붙여넣기
+* 로컬 컴퓨터에서 상태가 정상인지 테스트
+```
+$ ssh -T git@github.com
+Hi 20eung! You've successfully authenticated, but GitHub does not provide shell access.
+```
 
 ---
 # VS Code를 이용하여 컴퓨터 로컬 파일을 github에 올리기
