@@ -71,6 +71,11 @@ $ ssh -T git@github.com
 Hi 20eung! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
+#### 11. 만약 id_rsa.pub 가 없다면 생성하자
+```
+$ ssh-keygen -t rsa
+```
+
 ---
 # VS Code를 이용하여 컴퓨터 로컬 파일을 github에 올리기
 ## 1. VS Code 실행
