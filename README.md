@@ -84,13 +84,6 @@ cat ~/.ssh/id_rsa.pub
 #### 5. Add SSH key 버튼을 클릭하여 SSH 키를 추가
 
 
-### 6. GitHub 연결 테스트
-
-```
-ssh -T git@github.com
-```
-
-
 ## 3. token 인증 방법 (2)
 
 #### 1. github 접속, 로그인
@@ -128,6 +121,18 @@ Hi 20eung! You've successfully authenticated, but GitHub does not provide shell 
 #### 11. 만약 id_rsa.pub 가 없다면 생성하자
 ```
 $ ssh-keygen -t rsa
+```
+
+## 4. GitHub 연결 테스트
+
+```
+ssh -T git@github.com
+```
+
+## 5. GitHub 리포지토리 클론
+
+```
+git clone git@github.com:20eung/repository.git
 ```
 
 ---
