@@ -83,6 +83,7 @@ cat ~/.ssh/id_rsa.pub
 
 #### 5. Add SSH key 버튼을 클릭하여 SSH 키를 추가
 
+
 ### 6. GitHub 연결 테스트
 
 ```
