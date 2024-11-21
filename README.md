@@ -37,7 +37,60 @@
     git config --global user.email "20eung@gmail.com" <-- 깃허브 가입시 쓴 이메일
     git config --list                                 <-- 설정이 잘 들어갔나 확인
 ```
-## 3. token 인증 방법
+## 3. token 인증 방법 (1)
+
+### GitHub 계정에 SSH 키 추가
+
+### 1. SSH 키 생성
+
+이메일 주소는 GitHub 계정에 연결된 이메일 입력
+생성된 SSH 키는 기본적으로 ~/.ssh/id_rsa 와 같은 경로에 저장됨
+
+```
+ssh-keygen -t rsa -b 4096 -C "20eung@gmail.com"
+```
+
+
+### 2. SSH 에이전트 시작
+
+```
+eval "$(ssh-agent -s)"
+```
+
+### 3. SSH 키 추가
+
+```
+ssh-add ~/.ssh/id_rsa
+```
+
+### 4. SSH 공개 키 복사
+
+출력된 공개키를 클립보드에 복사
+
+```
+cat ~/.ssh/id_rsa.pub
+```
+
+### 5. GitHub에 SSH 키 추가
+
+#### 1. GitHub에 로그인
+
+#### 2. 우측 상단의 프로필 사진을 클릭한 후 Settings로 이동
+
+#### 3. 좌측 사이드바에서 SSH and GPG keys를 선택
+
+#### 4. New SSH key 버튼을 클릭하고, 제목을 입력한 후 앞에서 복사한 공개 키를 붙여넣기
+
+#### 5. Add SSH key 버튼을 클릭하여 SSH 키를 추가
+
+### 6. GitHub 연결 테스트
+
+```
+ssh -T git@github.com
+```
+
+
+## 3. token 인증 방법 (2)
 
 #### 1. github 접속, 로그인
 https://github.com
