@@ -189,3 +189,11 @@ git clone git@github.com:20eung/repository.git
 ---
 출처: 코딩알려주는누나 https://www.youtube.com/watch?v=lelVripbt2M
 깃, 깃허브 한번에 이해시켜드리고 포트폴리오 올리는 법까지 알려드림. 15분안에 당신은 Github 전문가가 됩니다
+---
+# github 상황별 명령어
+
+## 모든 변경사항을 덮어쓰기
+
+```
+git fetch --all && git reset --hard origin/main
+```
